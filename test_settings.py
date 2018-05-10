@@ -10,6 +10,7 @@ INSTALLED_APPS = (
     "django.contrib.contenttypes",
     "easy_thumbnails",
     "filer",
+    "shuup.admin",
     "shuup.core",
     "shuup.customer_group_pricing",
     "shuup.campaigns",
@@ -18,6 +19,7 @@ INSTALLED_APPS = (
     "shuup_stripe",
     "shuup.testing",
     "shuup.notify",
+    "bootstrap3"
 )
 
 DATABASES = {
@@ -29,7 +31,7 @@ DATABASES = {
         ),
     }
 }
-
+ROOT_URLCONF = 'shuup_workbench.urls'
 
 class DisableMigrations(object):
     def __contains__(self, item):
