@@ -9,7 +9,7 @@ from logging import getLogger
 
 import stripe
 from django.contrib import messages
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.http import Http404
 from django.http.response import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, redirect

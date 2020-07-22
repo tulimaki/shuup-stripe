@@ -8,7 +8,7 @@
 import mock
 import pytest
 from django.conf import settings
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.test import override_settings
 from django.test.client import Client
 from shuup.admin.shop_provider import SHOP_SESSION_KEY
